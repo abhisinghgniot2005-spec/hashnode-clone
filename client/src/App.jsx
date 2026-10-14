@@ -56,7 +56,7 @@ function App() {
     const fetchPublicBlogs = async () => {
       try {
         const response = await fetch(
-          "https://hashnode-clone-9r71.onrender.com/api/blogs"
+          "https://hashnode-clone-9r71.onrender.com/api/auth/login"
         );
         const data = await response.json();
 
