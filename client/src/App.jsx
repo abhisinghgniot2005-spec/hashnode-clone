@@ -91,7 +91,7 @@ function App() {
       const token = localStorage.getItem("token");
 
       const response = await fetch(
-        "http://localhost:5000/api/blogs/my",
+        "https://hashnode-clone-9r71.onrender.com/api/blogs/my",
         {
           method: "GET",
           headers: {
@@ -119,7 +119,7 @@ function App() {
   const handleViewBlog = async (id) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/blogs/${id}`
+        `https://hashnode-clone-9r71.onrender.com/api/blogs/${id}`
       );
 
       const data = await response.json();
@@ -149,7 +149,7 @@ function App() {
       const token = localStorage.getItem("token");
 
       const response = await fetch(
-        `http://localhost:5000/api/blogs/${id}`,
+        `https://hashnode-clone-9r71.onrender.com/api/blogs/${id}`,
         {
           method: "DELETE",
           headers: {
@@ -187,8 +187,8 @@ function App() {
 
     try {
       const endpoint = isLogin
-        ? "http://localhost:5000/api/auth/login"
-        : "http://localhost:5000/api/auth/register";
+        ? "https://hashnode-clone-9r71.onrender.com/api/auth/login"
+        : "https://hashnode-clone-9r71.onrender.com/api/auth/register";
 
       const body = isLogin
         ? {
@@ -303,8 +303,8 @@ function App() {
       const isEditing = showEditBlog;
 
       const endpoint = isEditing
-        ? `http://localhost:5000/api/blogs/${selectedBlog._id}`
-        : "http://localhost:5000/api/blogs";
+        ? `https://hashnode-clone-9r71.onrender.com/api/blogs/${selectedBlog._id}`
+        : "https://hashnode-clone-9r71.onrender.com/api/blogs";
 
       const response = await fetch(endpoint, {
         method: isEditing ? "PUT" : "POST",
