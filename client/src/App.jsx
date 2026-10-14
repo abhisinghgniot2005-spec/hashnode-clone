@@ -56,7 +56,7 @@ function App() {
     const fetchPublicBlogs = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/blogs"
+          "https://hashnode-clone-9r71.onrender.com/api/blogs"
         );
         const data = await response.json();
 
